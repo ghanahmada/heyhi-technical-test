@@ -26,7 +26,7 @@ def download_data(url, filename, dir_name: str = "experiments") -> None:
 
     logging.info("Downloading data....")
     gdown.download(url, quiet=False)
-
+    print(f"dowloading: {os.getcwd()}", flush=True)
     logging.info("Extracting zip file....")
     with zipfile.ZipFile(f"{filename}.zip", 'r') as zip_ref:
         zip_ref.extractall(filename)

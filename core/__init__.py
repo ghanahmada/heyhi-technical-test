@@ -33,9 +33,9 @@ def initialize_qa_engines():
 
 def setup_index():
     print("Downloading index...")
-    print(os.getcwd())
+    print(os.getcwd(), flush=True)
     download_data(url="https://drive.google.com/uc?&id=1n-KkrUpfVncfP_vbsyYMgCzGhclVTu8i",
               filename="experiments",
               dir_name="data")
-    print(os.getcwd())
+    print(os.getcwd(), flush=True)
     print("Index has been downloaded.")
