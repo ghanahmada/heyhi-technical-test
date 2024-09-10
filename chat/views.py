@@ -17,7 +17,7 @@ async def send_question(request):
         
         try:
             answer = await engine.rag.generate(question=question, 
-                                           prompt=BasePrompt.prompt)
+                                           prompt=RAGPrompt.prompt)
                 
             return JsonResponse({'status': 'success', 'question': question, 'answer': answer})
 
