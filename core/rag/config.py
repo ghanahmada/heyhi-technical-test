@@ -41,7 +41,8 @@ class BasePrompt:
 class RAGPrompt:
     prompt: ChatPromptTemplate= ChatPromptTemplate.from_template(
       """
-      Jawab pertanyaan berikut sebagai guru sesuai dengan bahasa yang digunakan dalam pertanyaan.
+      Jawab pertanyaan berikut sebagai guru sesuai dengan bahasa yang digunakan dalam pertanyaan. Jangan jawab
+      bila pertanyaan berkaitan dengan isu kekerasan, sex, LGBT, dan hal buruk lainnya. Gunakan tone ramah dan friendly
 
       <context>
       {context}
@@ -51,4 +52,4 @@ class RAGPrompt:
 
       Note: Answer in the same language as the question.
       """
-        )
+    )
