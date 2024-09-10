@@ -16,7 +16,7 @@ async def send_question(request):
             return JsonResponse({'status': 'error', 'message': 'No input provided'}, status=400)
         
         try:
-            answer = await engine.generator.generate(question=question, 
+            answer = await engine.rag.generate(question=question, 
                                            prompt=BasePrompt.prompt)
                 
             return JsonResponse({'status': 'success', 'question': question, 'answer': answer})

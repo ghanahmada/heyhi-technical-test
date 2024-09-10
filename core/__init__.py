@@ -18,11 +18,9 @@ class SingletonMeta(type):
 
 class QAEngine(metaclass=SingletonMeta):
     def __init__(self):
-        # self.retriever = as_langchain_retriever(ColBERTRetriever(ColBERTConfig).searcher, k=1)
-        self.retriever = None
+        self.retriever = as_langchain_retriever(ColBERTRetriever(ColBERTConfig).searcher, k=1)
         self.generator = LlaMa38BInstructGenerator(LlaMa38BInstructConfig)
         self.rag = RAG(self.retriever, self.generator.llm)
-        # self.rag = self.generator
 
 
 def initialize_qa_engines():
