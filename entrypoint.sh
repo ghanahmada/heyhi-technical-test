@@ -13,4 +13,4 @@ python3 manage.py migrate
 
 # start server
 echo "Starting server"
-gunicorn chqa_gemastik_2024.wsgi:application --bind 0.0.0.0:$PORT --workers 1 --timeout 240
+gunicorn main.wsgi:application --bind 0.0.0.0:$PORT --workers 1 --timeout 240
