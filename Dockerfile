@@ -34,7 +34,7 @@ RUN pip3 install -r requirements.txt
 
 ENV PYTHONUNBUFFERED=1 \
     PYTHONPATH=/app \
-    DJANGO_SETTINGS_MODULE=chqa_gemastik_2024.settings \
+    DJANGO_SETTINGS_MODULE=main.settings \
     PORT=8000 \
     WEB_CONCURRENCY=2
 
