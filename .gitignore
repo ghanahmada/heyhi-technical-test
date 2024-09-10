@@ -1,0 +1,10 @@
+env/
+/env/
+
+data/
+/data/
+
+db.sqlite3
+
+staticfiles/
+/staticfiles/
