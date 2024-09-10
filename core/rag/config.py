@@ -5,7 +5,7 @@ from langchain_core.prompts import PromptTemplate, ChatPromptTemplate
 
 @dataclass
 class ColBERTConfig:
-    experiment_path: str = "/core/data/experiments/msmarco"
+    experiment_path: str = "/app/core/data/experiments/experiments/msmarco"
     index_name: str = "heyhi"
     checkpoint: str = "ghanahmada/biology-mcolbert"
 
