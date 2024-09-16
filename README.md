@@ -23,4 +23,4 @@ docker run -p 8000:8000 heyhi-technical-test:1.0
 https://localhost/8000
 ```
 
-
+[App link](https://lucky-friendship-production.up.railway.app/)
